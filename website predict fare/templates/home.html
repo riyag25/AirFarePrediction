@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prediction</title>
+    <link rel="stylesheet" href="/static/css/prediction.css" type="text/css">
+    <style>
+      body {
+       background-image: url('/static/images/air4.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+           }
+   </style>
+</head>
+<body>
+
+  <div class="content" style='color:rgb(237, 235, 241)'><b>
+    <p><h2>The aim is to predict the air fare based on the parameters given.</h2></p>
+   </br>
+  </div>
+     <!-- Input Form -->
+<div  class="input form" style='color:honeydew'>
+    <form action="{{url_for('result')}}" method="post">
+
+      <h1 id="heading">Airfare Predictor</h1>
+
+      
+
+      <h3><label for="input">Airline Name</label></h3>
+        <select name="Airline">
+          <option value="Jet Airways">Jet Airways</option>
+          <option value="IndiGo">IndiGo</option>
+          <option value="Air India">Air India</option>
+          <option value="Multiple carriers">Multiple carriers</option>
+          <option value="SpiceJet">SpiceJet</option>
+          <option value="Vistara">Vistara</option>
+          <option value="Air Asia">Air Asia</option>
+          <option value="GoAir">GoAir</option>
+          <option value="Multiple carriers Premium economy">Multiple carriers Premium economy</option>
+          <option value="Jet Airways Business">Jet Airways Business</option>
+          <option value="Vistara Premium economy">Vistara Premium economy</option>
+          <option value="Trujet">Trujet</option>
+        </select>
+
+      <h3 id="input">Date of Journey</h3>
+      <input type="date" name="Date_of_Journey" placeholder="dd/mm/yyyy">
+
+      
+      <h3><label for="input">Source</label></h3>
+        <select name="Source">
+          <option value="Delhi">Delhi</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Banglore">Banglore</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Chennai">Chennai</option>
+        </select>
+      
+      
+
+      <h3><label for="input">Destination</label></h3>
+        <select name="Destination">
+          <option value="Cochin">Cochin</option>
+          <option value="Banglore">Banglore</option>
+          <option value="Delhi">Delhi</option>
+          <option value="New Delhi">New Delhi</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Kolkata">Kolkata</option>
+        </select>
+
+      <h3 id="input">Depature Time</h3>
+      <input type="time" name="Dep_Time" placeholder="Departure Time">
+
+      <h3 id="input">Arrival Time</h3>
+      <input type="time" name="Arrival_Time" placeholder="Arrival Time">
+
+      <h3 id="input">Duration</h3>
+      <input type="text" name="Duration" placeholder="Eg: 4h 35m">
+
+      <br><br>
+
+      
+        <h3><label for="input">Additional Info</label></h3>
+        <select name="info">
+          <option value="In-flight meal not included">In-flight meal not included</option>
+          <option value="No check-in baggage included">No check-in baggage included</option>
+          <option value="Business class">Business class</option>
+          <option value="1 Long layover">1 Long layover</option>
+          <option value="Change airports">Change airports</option>
+          <option value="1 Short layover ">1 Short layover </option>
+          <option value="2 Long layover">2 Long layover</option>
+          <option value="No info">No info</option>
+        </select>
+    
+
+      
+       <h3><label for="input">Total Stops</label></h3>
+        <select name="stops">
+          <option value="non-stop">non-Stop</option>
+          <option value="1 stop">1 stop</option>
+          <option value="2 stops">2 stops</option>
+          <option value="3 stops">3 stops</option>
+          <option value="4 stops">4 stops</option>
+        </select>
+     
+        <br>
+        <input type ='submit' value ='predict'>
+     
+    </form>
+   
+       
+      </div>
+
+      
+    
+</body>
+</html>

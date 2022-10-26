@@ -1,0 +1,28 @@
+#result{
+    
+    color: rgb(17, 17, 17);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 75px;
+
+}
+.nav-menu
+{
+    font-family:cursive;
+    padding-left: 10px;
+    font-size: 25px;
+    position:absolute;
+    top: 1%;
+}
+.nav-menu li{
+    display:inline-block;
+    padding:5px 20px;
+    color:antiquewhite;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-menu li a:hover{
+    border:1px solid:grey;
+    background-color: white;
+}
